@@ -15,13 +15,3 @@ output "internet_gateway_id" {
   description = "id of internet gateway if it is created"
   value = join(",", oci_core_internet_gateway.ig.*.id)
 }
-
-output "ig_route_id" {
-  description = "id of internet gateway route table"
-  value       = join(",", oci_core_route_table.ig.*.id)
-}
-
-output "nat_route_id" {
-  description = "id of VCN NAT gateway route table"
-  value       = join(",", oci_core_route_table.nat.*.id)
-}
