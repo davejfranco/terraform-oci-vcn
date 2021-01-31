@@ -15,3 +15,7 @@ output "internet_gateway_id" {
   description = "id of internet gateway if it is created"
   value = join(",", oci_core_internet_gateway.ig.*.id)
 }
+
+output "default_rt_id" {
+  value = oci_core_vcn.vcn.default_route_table_id
+}
