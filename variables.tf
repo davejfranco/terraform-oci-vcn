@@ -25,19 +25,19 @@ variable "label_prefix" {
 
 variable "internet_gateway_enabled" {
   description = "whether to create the internet gateway"
-  default     = false
+  default     = true
   type        = bool
 }
 
 variable "nat_gateway_enabled" {
   description = "whether to create a nat gateway in the vcn"
-  default     = false
+  default     = true
   type        = bool
 }
 
 variable "service_gateway_enabled" {
   description = "whether to create a service gateway"
-  default     = false
+  default     = true
   type        = bool
 }
 
